@@ -1,0 +1,172 @@
+*{padding:0;margin:0  ;}
+body{ color : transparent; background-image: url(ca.jpg); -webkit-background-clip: text ;}
+header { width:100%; height:100px; background-color:black;}
+#logo{width:20%;}
+#buttid{width:150px; height:100px; font-size: 25px;background-color:rgb(180, 60, 60); color:white;float:right; border-radius: 40%;
+    border:solid rgb(180, 60, 60); color:whitesmoke; position:absolute; top:1000px; right:100px;}
+#buttid2{width:150px; height:100px; font-size: 25px;background-color:rgb(180, 60, 60); color:white;float:right; border-radius: 40%;
+    border:solid rgb(180, 60, 60); color:whitesmoke; position:absolute; top:1000px; right:400px;}}
+#nameid{color:white; line-height: 100px; height: 50px;}
+#listit{list-style-type:none;margin:0 ; padding:0; background-color:silver;  }
+li {float:right; }
+li a{color:white;text-decoration: none ; display: inline-block;background-color: black; padding:5px;}
+li a:hover { background-color:silver;}
+main {height:1000px; width:100%;margin:auto; }
+#mainimg{width:400px; height:400px; border-radius: 50%;float:left;margin:10px; }
+#pid {float:right; margin:50px; display: inline-flex; padding:30px;background-color:white ;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; font-size: 20px;}
+#p2id{ display:inline-flex;  color:black}
+.box{border:solid rosybrown; padding:10px ; margin:20px; display: inline-block; background-color:white;
+width:50%; font-size:15px; }
+
+#sanur{width:600px; height:400px;clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+float:right;}
+#sanurid{ position:absolute; top: 50px; }
+#sanurp{ font-size:20px; position :absolute; top:90px; }
+#ginid{width:600px; height:400px;clip-path: polygon(1% 0, 50% 12%, 60% 0%, 100% 50%, 60% 100%, 54% 88%, 1% 100%);
+; position: absolute; top:500px;
+left:0px;display: inline-flex;}
+#ginh1{position:absolute; top:600px; left:600px; display: inline-flex;}
+#ginp{position:absolute; top:650px; left: 600px; font-size:20px;}
+#ubudh1{position:absolute; top:1000px; }
+#ubudimg{position: absolute; top:1000px; right:0px;width:600px; height:400px;}
+#ubudp{position:absolute; top:1050px; width: 700px; font-size:20px;}
+#canp{position:absolute; top:1500px; right:10px; font-size:20px;width:700px;}
+#canid{position:absolute; top:1450px; right:600px;}
+#canimg{position:absolute; top:1450px; left:0px; width:600px; height:400px;}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    position: absolute; top:1300px; right:150px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black; ;
+  }
+  
+  .flip-card-back {
+    background-color : black;
+    color: white;
+    transform: rotateY(180deg);
+  }
+footer{background-color: black; width:100%; height:50px;color:white; position: absolute;}
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
